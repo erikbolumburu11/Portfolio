@@ -1,0 +1,18 @@
+{{ define "main" }}
+  {{ .Content }}
+  <div class="row row-cols-auto mx-3">
+    {{ range .Pages }}
+      <div class="card col-4 m-2 p-0">
+        <div class="card-header">
+          <h3>{{ .Title }}</h3>
+        </div>
+        <div class="card-body">
+          <p>{{ .Summary }}</p>
+        </div>
+        <div class="card-footer">
+          <a href="{{ .RelPermalink }}" class="btn btn-primary" role="button">See More</a>
+        </div>
+      </div>
+    {{ end }}
+  </div>
+{{ end }}

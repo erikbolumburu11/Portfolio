@@ -1,0 +1,22 @@
+.navbar {
+    background-color: #424549;
+}
+
+header {
+    margin-bottom: 0;
+    border-bottom: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    nav { flex-direction: row; }
+
+    .project-container{ display: flex; }
+
+    .project-container .project-list { width: 25%; }
+
+    .project-container .project {flex: 1; }
+}
+
+.title-banner { 
+    width: 100%;
+}
