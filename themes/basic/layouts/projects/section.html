@@ -1,8 +1,8 @@
 {{ define "main" }}
   {{ .Content }}
-  <div class="row row-cols-auto mx-3">
+  <div class="row mx-3 justify-content-center">
     {{ range .Pages }}
-      <div class="card col-4 m-2 p-0">
+      <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2">
         <div class="card-header">
           <h3>{{ .Title }}</h3>
         </div>
