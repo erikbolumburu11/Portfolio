@@ -1,11 +1,19 @@
 {{ define "main" }}
-<div class="project-container mx-3">
+<div class="text-center">
+{{ range .Params.Categories }}
+    <a href="/categories/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">{{ . }}</a>
+{{ end }}
+{{ range .Params.Tags }}
+    <a href="/tags/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">{{ . }}</a>
+{{ end }}
+</div>
+<div class="project-container m-3">
     <section class="project-list">
         <div class="card">
             <div class="card-header">
-                <h2>Projects</h2>
+                <a href="/projects" class="header-link link-light link-underline-opacity-0">Projects</a>
             </div>
-                <ul class="body">
+                <ul class="body pt-2">
                     {{ range (where .Site.RegularPages "Type" "in" "projects")}}
                         <li><a class="link-light" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                     {{ end }}
@@ -13,8 +21,13 @@
         </div>
     </section>
 
-    <section class="project">
-        <div class="mx-3">
+    <section class="project project-body mx-3">
+        {{ if not (eq .Params.videoPath "") }}
+        {{/*  MAKE THIS A GALLERY WITH VIDEO AND IMAGES  */}}
+            <h2>Video</h2>
+            {{ partial "project-video.html" . }}
+        {{ end }}
+        <div class="">
             {{ .Content }}
         </div>
     </section>

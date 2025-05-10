@@ -1,0 +1,23 @@
+<div class="project-tags text-center">
+    <h5>Categories & Tags</h5>
+
+    <a href="/projects" class="badge link-underline link-underline-opacity-0 bg-danger tag-badge mb-2">All ({{ len (where .Site.RegularPages "Section" "=" "projects") }})</a>
+
+    {{ range $index, $var := .Site.Taxonomies.categories.ByCount }}
+        <a href="/categories/{{ $var.Page.LinkTitle | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">
+            {{ $var.Page.Data.Term }} ({{ $var.Count }})
+        </a>
+    {{ end }}
+
+    {{ range $index, $var := .Site.Taxonomies.tags.ByCount }}
+        <a href="/tags/{{ $var.Page.LinkTitle | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            {{ $var.Page.Data.Term }} ({{ $var.Count }})
+        </a>
+    {{ end }}
+
+</div>
+<div class="row mx-3 justify-content-center">
+{{ range .Pages.ByWeight.Reverse }}
+    {{ partial "project-card.html" .}}
+{{ end }}
+</div>

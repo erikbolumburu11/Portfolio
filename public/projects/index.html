@@ -22,7 +22,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
 
   <header>
-    <nav class="navbar navbar-expand-lg px-3 py-0">
+    <nav class="navbar navbar-expand-lg px-3 py-0 pt-2">
   <div class="navbar-brand">Erik Bolumburu</div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -30,16 +30,16 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/">Home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/projects">Projects</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/about">About</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/contact">Contact</a>
       </li>
     </ul>
@@ -54,54 +54,251 @@
   <main>
     
   
-  <div class="row mx-3 justify-content-center">
+  <div class="project-tags text-center">
+    <h5>Categories & Tags</h5>
+
+    <a href="/projects" class="badge link-underline link-underline-opacity-0 bg-danger tag-badge mb-2">All (8)</a>
+
     
-      <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2">
-        <div class="card-header">
-          <h3>Dungeon Crawler</h3>
-        </div>
-        <div class="card-body">
-          <p>For my final year project at the University of Sussex, I developed a 2D A-RPG game in Unity that implements advanced AI techniques</p>
-        </div>
-        <div class="card-footer">
-          <a href="/projects/dungeoncrawler/" class="btn btn-primary" role="button">See More</a>
-        </div>
-      </div>
+        <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">
+            Game Dev (5)
+        </a>
     
-      <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2">
-        <div class="card-header">
-          <h3>Online Payment Service</h3>
-        </div>
-        <div class="card-body">
-          <p>An online payment service like PayPal.</p>
-        </div>
-        <div class="card-footer">
-          <a href="/projects/onlinepaymentservice/" class="btn btn-primary" role="button">See More</a>
-        </div>
-      </div>
+        <a href="/categories/web-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">
+            Web Dev (2)
+        </a>
     
-      <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2">
-        <div class="card-header">
-          <h3>Portfolio Website</h3>
-        </div>
-        <div class="card-body">
-          <p>My portfolio website was built in Go using the Hugo static site generator.</p>
-        </div>
-        <div class="card-footer">
-          <a href="/projects/portfolio/" class="btn btn-primary" role="button">See More</a>
-        </div>
-      </div>
+        <a href="/categories/reverse-engineering" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">
+            Reverse Engineering (1)
+        </a>
     
-  </div>
+
+    
+        <a href="/tags/c&#43;&#43;" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            C&#43;&#43; (3)
+        </a>
+    
+        <a href="/tags/c-sharp" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            C-Sharp (3)
+        </a>
+    
+        <a href="/tags/unity" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Unity (3)
+        </a>
+    
+        <a href="/tags/engine-dev" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Engine Dev (2)
+        </a>
+    
+        <a href="/tags/graphics" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Graphics (2)
+        </a>
+    
+        <a href="/tags/ai" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            AI (1)
+        </a>
+    
+        <a href="/tags/back-end" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Back-End (1)
+        </a>
+    
+        <a href="/tags/django" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Django (1)
+        </a>
+    
+        <a href="/tags/go" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Go (1)
+        </a>
+    
+        <a href="/tags/hugo" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Hugo (1)
+        </a>
+    
+        <a href="/tags/multiplayer" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            Multiplayer (1)
+        </a>
+    
+        <a href="/tags/opengl" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            OpenGL (1)
+        </a>
+    
+
+</div>
+<div class="row mx-3 justify-content-center">
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/dungeoncrawler/&#34;">
+<img src="/images/DungeonCrawler.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Dungeon Crawler</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Game Dev</a>
+
+
+    <a href="/tags/unity" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Unity</a>
+
+    <a href="/tags/c-sharp" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C-Sharp</a>
+
+    <a href="/tags/ai" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">AI</a>
+
+    <p>For my final year project at the University of Sussex, I developed a 2D A-RPG game in Unity that implements advanced AI techniques.</p>
+</div>
+<div class="card-footer">
+    <a href="/projects/dungeoncrawler/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/bullethellengine/&#34;">
+<img src="/images/bullethellengine.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Bullet Hell Engine</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Game Dev</a>
+
+
+    <a href="/tags/c&#43;&#43;" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C&#43;&#43;</a>
+
+    <a href="/tags/graphics" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Graphics</a>
+
+    <a href="/tags/engine-dev" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Engine Dev</a>
+
+    <p>Using SFML, I created a tool for creating attack patterns for bullet hell enemies. It can handle tens of thousands of bullets being drawn to the screen whilst mainting high performance by using batch renderering techniques</p>
+</div>
+<div class="card-footer">
+    <a href="/projects/bullethellengine/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/onlinepaymentservice/&#34;">
+<img src="/images/OnlinePaymentApp.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Online Payment Service</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/web-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Web Dev</a>
+
+
+    <a href="/tags/back-end" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Back-End</a>
+
+    <a href="/tags/django" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Django</a>
+
+    <p>An online payment service like PayPal developed in Django. Users can make transactions to other users, as well as request money from them.</p>
+</div>
+<div class="card-footer">
+    <a href="/projects/onlinepaymentservice/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/unitysoulslike/&#34;">
+<img src="/images/unity-soulslike.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Unity Souls-like</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Game Dev</a>
+
+
+    <a href="/tags/unity" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Unity</a>
+
+    <a href="/tags/c-sharp" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C-Sharp</a>
+
+    <p></p>
+</div>
+<div class="card-footer">
+    <a href="/projects/unitysoulslike/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/openglrenderer/&#34;">
+<img src="/images/openglrenderer.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">OpenGL Renderer</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Game Dev</a>
+
+
+    <a href="/tags/c&#43;&#43;" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C&#43;&#43;</a>
+
+    <a href="/tags/graphics" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Graphics</a>
+
+    <a href="/tags/opengl" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">OpenGL</a>
+
+    <a href="/tags/engine-dev" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Engine Dev</a>
+
+    <p></p>
+</div>
+<div class="card-footer">
+    <a href="/projects/openglrenderer/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/multiplayertrpg/&#34;">
+<img src="/images/multiplayertrpg.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Multiplayer T-RPG</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Game Dev</a>
+
+
+    <a href="/tags/unity" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Unity</a>
+
+    <a href="/tags/c-sharp" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C-Sharp</a>
+
+    <a href="/tags/multiplayer" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Multiplayer</a>
+
+    <p></p>
+</div>
+<div class="card-footer">
+    <a href="/projects/multiplayertrpg/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/portfolio/&#34;">
+<img src="/images/portfolio.png" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Portfolio Website</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/web-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Web Dev</a>
+
+
+    <a href="/tags/go" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Go</a>
+
+    <a href="/tags/hugo" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Hugo</a>
+
+    <p>My portfolio website was built in Go using the Hugo static site generator.</p>
+</div>
+<div class="card-footer">
+    <a href="/projects/portfolio/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+    <div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location=&#34;/projects/assaultcubeinternal/&#34;">
+<img src="/images/assaultcube.jpg" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">Assault Cube Aimbot</h5>
+<div class="card-body p-2">
+
+    <a href="/categories/reverse-engineering" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Reverse Engineering</a>
+
+
+    <a href="/tags/c&#43;&#43;" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C&#43;&#43;</a>
+
+    <p></p>
+</div>
+<div class="card-footer">
+    <a href="/projects/assaultcubeinternal/" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>
+
+</div>
 
   </main>
-  <footer>
-    <footer class="footer mt-auto py-3">
+    <footer class="footer bg-dark mt-auto p-1 border-top fixed-bottom">
   <div class="container">
-    <span class="text-muted">Copyright 2025. All rights reserved.</span>
+    <ul class="nav justify-content-center text-align-center">
+      <a href="https://github.com/erikbolumburu11"><img src="/images/github.png" class="footer-icon"></a>
+      <a href="https://www.youtube.com/@erikbolumburu1386"><img src="/images/youtube.png" class="footer-icon"></a>
+      <a href="https://www.linkedin.com/in/erikbolumburu/"><img src="/images/linkedin.png" class="footer-icon"></a>
+      <a href="mailto:erikbolumburu11@gmail.com"><img src="/images/mail.png" class="footer-icon"></a>
+    </ul>
   </div>
 </footer>
 
-  </footer>
 </body>
 </html>

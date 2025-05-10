@@ -1,3 +1,7 @@
+body {
+    padding-bottom: 40pt;
+}
+
 .navbar {
     background-color: #424549;
 }
@@ -7,9 +11,62 @@ header {
     border-bottom: 0;
 }
 
+.tag-badge {
+    transform: scale(1.01);
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.tag-badge:hover {
+    z-index: 1;
+    transform: scale(1.11);
+    filter: brightness(110%);
+}
+
 .project-card {
     text-align: center;
     max-width: 75% !important;
+    box-shadow: 2pt 2pt 2pt 2pt hsl(210, 11%, 12%, 50%);
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.project-card:hover {
+    background-color: #272b30;
+    transform: scale(1.1);
+    box-shadow: 2pt 2pt 3pt 3pt hsl(210, 11%, 12%, 50%);
+    z-index: 1;
+}
+
+.project-image-top {
+    object-fit: cover;
+    height: 11rem;
+}
+
+.footer-icon {
+    width: 15pt !important; 
+    height: 15pt !important;
+    margin-left: 5pt;
+    margin-right: 5pt;
+}
+
+.embed-container { 
+    position: relative; 
+    height: 360px; 
+    overflow: hidden; 
+    max-width: 640px !important;
+    max-height: 360px !important;
+} 
+
+.embed-container iframe, .embed-container object, .embed-container embed { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    max-width: 640px !important;
+    max-height: 360px !important;
+    box-shadow: 3pt 3pt 2pt 2pt hsl(210, 11%, 12%, 80%);
 }
 
 @media only screen and (min-width: 768px) {
@@ -20,8 +77,21 @@ header {
     .project-container .project-list { width: 25%; }
 
     .project-container .project {flex: 1; }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .project-body {
+        padding-top: 1rem;
+    }
 }
 
 .title-banner { 
     width: 100%;
+}
+
+.header-link {
+    font-size: calc(1.325rem + .9vw);
+    font-weight: 500;
+    margin-bottom: .5rem;
 }

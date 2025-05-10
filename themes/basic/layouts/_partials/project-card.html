@@ -1,0 +1,16 @@
+<div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location={{ .RelPermalink }}">
+<img src="{{ .Params.ImagePath }}" class="card-img-top project-image-top mb-3">
+<h5 class="card-title m-0">{{ .Title }}</h5>
+<div class="card-body p-2">
+{{ range .Params.Categories }}
+    <a href="/categories/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">{{ . }}</a>
+{{ end}}
+{{ range .Params.Tags }}
+    <a href="/tags/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">{{ . }}</a>
+{{ end}}
+    <p>{{ .Summary }}</p>
+</div>
+<div class="card-footer">
+    <a href="{{ .RelPermalink }}" class="btn btn-primary" role="button">See More</a>
+</div>
+</div>

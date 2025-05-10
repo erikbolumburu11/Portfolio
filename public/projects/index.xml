@@ -8,18 +8,11 @@
     <language>en-us</language>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dungeon Crawler</title>
-      <link>http://localhost:1313/projects/dungeoncrawler/</link>
+      <title>Assault Cube Aimbot</title>
+      <link>http://localhost:1313/projects/assaultcubeinternal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/dungeoncrawler/</guid>
-      <description>For my final year project at the University of Sussex, I developed a 2D A-RPG game in Unity that implements advanced AI techniques</description>
-    </item>
-    <item>
-      <title>Online Payment Service</title>
-      <link>http://localhost:1313/projects/onlinepaymentservice/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/projects/onlinepaymentservice/</guid>
-      <description>An online payment service like PayPal.</description>
+      <guid>http://localhost:1313/projects/assaultcubeinternal/</guid>
+      <description></description>
     </item>
     <item>
       <title>Portfolio Website</title>
@@ -27,6 +20,48 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/portfolio/</guid>
       <description>My portfolio website was built in Go using the Hugo static site generator.</description>
+    </item>
+    <item>
+      <title>Multiplayer T-RPG</title>
+      <link>http://localhost:1313/projects/multiplayertrpg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/multiplayertrpg/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenGL Renderer</title>
+      <link>http://localhost:1313/projects/openglrenderer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/openglrenderer/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Unity Souls-like</title>
+      <link>http://localhost:1313/projects/unitysoulslike/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/unitysoulslike/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Online Payment Service</title>
+      <link>http://localhost:1313/projects/onlinepaymentservice/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/onlinepaymentservice/</guid>
+      <description>An online payment service like PayPal developed in Django. Users can make transactions to other users, as well as request money from them.</description>
+    </item>
+    <item>
+      <title>Bullet Hell Engine</title>
+      <link>http://localhost:1313/projects/bullethellengine/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bullethellengine/</guid>
+      <description>Using SFML, I created a tool for creating attack patterns for bullet hell enemies. It can handle tens of thousands of bullets being drawn to the screen whilst mainting high performance by using batch renderering techniques</description>
+    </item>
+    <item>
+      <title>Dungeon Crawler</title>
+      <link>http://localhost:1313/projects/dungeoncrawler/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/dungeoncrawler/</guid>
+      <description>For my final year project at the University of Sussex, I developed a 2D A-RPG game in Unity that implements advanced AI techniques.</description>
     </item>
   </channel>
 </rss>

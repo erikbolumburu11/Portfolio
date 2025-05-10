@@ -22,7 +22,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js" integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D" crossorigin="anonymous"></script>
 
   <header>
-    <nav class="navbar navbar-expand-lg px-3 py-0">
+    <nav class="navbar navbar-expand-lg px-3 py-0 pt-2">
   <div class="navbar-brand">Erik Bolumburu</div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -30,16 +30,16 @@
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/">Home</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/projects">Projects</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/about">About</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item pt-1">
         <a class="nav-link" href="/contact">Contact</a>
       </li>
     </ul>
@@ -53,47 +53,65 @@
 
   <main>
     
-<div class="project-container mx-3">
+<div class="text-center">
+
+    <a href="/categories/game-dev" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">Game Dev</a>
+
+
+    <a href="/tags/unity" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">Unity</a>
+
+    <a href="/tags/c-sharp" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">C-Sharp</a>
+
+    <a href="/tags/ai" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">AI</a>
+
+</div>
+<div class="project-container m-3">
     <section class="project-list">
         <div class="card">
             <div class="card-header">
-                <h2>Projects</h2>
+                <a href="/projects" class="header-link link-light link-underline-opacity-0">Projects</a>
             </div>
-                <ul class="body">
+                <ul class="body pt-2">
                     
-                        <li><a class="link-light" href="/projects/dungeoncrawler/">Dungeon Crawler</a></li>
+                        <li><a class="link-light" href="/projects/assaultcubeinternal/">Assault Cube Aimbot</a></li>
+                    
+                        <li><a class="link-light" href="/projects/portfolio/">Portfolio Website</a></li>
+                    
+                        <li><a class="link-light" href="/projects/multiplayertrpg/">Multiplayer T-RPG</a></li>
+                    
+                        <li><a class="link-light" href="/projects/openglrenderer/">OpenGL Renderer</a></li>
+                    
+                        <li><a class="link-light" href="/projects/unitysoulslike/">Unity Souls-like</a></li>
                     
                         <li><a class="link-light" href="/projects/onlinepaymentservice/">Online Payment Service</a></li>
                     
-                        <li><a class="link-light" href="/projects/portfolio/">Portfolio Website</a></li>
+                        <li><a class="link-light" href="/projects/bullethellengine/">Bullet Hell Engine</a></li>
+                    
+                        <li><a class="link-light" href="/projects/dungeoncrawler/">Dungeon Crawler</a></li>
                     
                 </ul>
         </div>
     </section>
 
-    <section class="project">
-        <div class="mx-3">
-            <h2 id="description">Description</h2>
-<p>Descibed</p>
-<h2 id="tech-used">Tech Used</h2>
-<ul>
-<li>Item</li>
-<li>Item</li>
-<li>Item</li>
-</ul>
-
+    <section class="project project-body mx-3">
+        
+        <div class="">
+            
         </div>
     </section>
 </div>
 
   </main>
-  <footer>
-    <footer class="footer mt-auto py-3">
+    <footer class="footer bg-dark mt-auto p-1 border-top fixed-bottom">
   <div class="container">
-    <span class="text-muted">Copyright 2025. All rights reserved.</span>
+    <ul class="nav justify-content-center text-align-center">
+      <a href="https://github.com/erikbolumburu11"><img src="/images/github.png" class="footer-icon"></a>
+      <a href="https://www.youtube.com/@erikbolumburu1386"><img src="/images/youtube.png" class="footer-icon"></a>
+      <a href="https://www.linkedin.com/in/erikbolumburu/"><img src="/images/linkedin.png" class="footer-icon"></a>
+      <a href="mailto:erikbolumburu11@gmail.com"><img src="/images/mail.png" class="footer-icon"></a>
+    </ul>
   </div>
 </footer>
 
-  </footer>
 </body>
 </html>
