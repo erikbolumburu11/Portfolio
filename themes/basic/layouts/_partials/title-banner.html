@@ -1,9 +1,11 @@
-{{ if .IsHome }}
 <div class="title-banner bg-dark bg-gradient text-center pt-4 pb-4 mb-4">
-    <h1>Portfolio</h1>
+    {{ if .IsHome }}
+        <h1>Erik Bolumburu</h1>
+    {{ else }}
+        <h1>
+            {{ if eq .Title "C-Sharp" }} C#
+            {{ else }} {{ .Title }}
+            {{ end }}
+        </h1>
+    {{ end }}
 </div>
-{{ else }}
-<div class="title-banner bg-dark bg-gradient text-center pt-4 pb-4 mb-4">
-    <h1>{{ .Title }}</h1>
-</div>
-{{ end }}

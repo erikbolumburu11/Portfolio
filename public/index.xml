@@ -55,7 +55,7 @@
       <link>http://localhost:1313/projects/bullethellengine/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/projects/bullethellengine/</guid>
-      <description>Using SFML, I created a tool for creating attack patterns for bullet hell enemies. It can handle tens of thousands of bullets being drawn to the screen whilst mainting high performance by using batch renderering techniques</description>
+      <description>Using SFML, I created a tool for creating attack patterns for bullet hell enemies. It can handle tens of thousands of bullets being drawn to the screen whilst mainting high performance by using batch renderering techniques.</description>
     </item>
     <item>
       <title>Dungeon Crawler</title>

@@ -1,17 +1,25 @@
 {{ define "main" }}
 <div class="text-center">
-{{ range .Params.Categories }}
-    <a href="/categories/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">{{ . }}</a>
-{{ end }}
-{{ range .Params.Tags }}
-    <a href="/tags/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">{{ . }}</a>
-{{ end }}
 </div>
 <div class="project-container m-3">
     <section class="project-list">
-        <div class="card">
+    <div class="card summary-card mx-0 mb-3">
+        <div class="card-header">
+            <h3 class="">Summary</h3>
+        </div>
+            <div class="body p-3 pb-0">
+                {{ range .Params.Categories }}
+                    <a href="/categories/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">{{ . }}</a>
+                {{ end }}
+                {{ range .Params.Tags }}
+                    <a href="/tags/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">{{ . }}</a>
+                {{ end }}
+                <p>{{ .Params.Summary }}</p>
+            </div>
+    </div>
+        <div class="card project-list-card">
             <div class="card-header">
-                <a href="/projects" class="header-link link-light link-underline-opacity-0">Projects</a>
+                <a href="/projects" class="header-link link-light link-underline-opacity-0 h3">Projects</a>
             </div>
                 <ul class="body pt-2">
                     {{ range (where .Site.RegularPages "Type" "in" "projects")}}
@@ -19,9 +27,28 @@
                     {{ end }}
                 </ul>
         </div>
+        <div class="card tag-card mt-3">
+            <div class="card-header">
+                <h3>Categories & Tags</h3>
+            </div>
+                <div class="body p-2 text-center">
+                    <a href="/projects" class="badge link-underline link-underline-opacity-0 bg-danger tag-badge mb-2">All ({{ len (where .Site.RegularPages "Section" "=" "projects") }})</a>
+                    {{ range $index, $var := .Site.Taxonomies.categories.ByCount }}
+                        <a href="/categories/{{ $var.Page.LinkTitle | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">
+                            {{ $var.Page.Data.Term }} ({{ $var.Count }})
+                        </a>
+                    {{ end }}
+
+                    {{ range $index, $var := .Site.Taxonomies.tags.ByCount }}
+                        <a href="/tags/{{ $var.Page.LinkTitle | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+                            {{ $var.Page.Data.Term }} ({{ $var.Count }})
+                        </a>
+                    {{ end }}
+    </div>
+        </div>
     </section>
 
-    <section class="project project-body mx-3">
+    <section class="project project-body mx-auto">
         {{ if not (eq .Params.videoPath "") }}
         {{/*  MAKE THIS A GALLERY WITH VIDEO AND IMAGES  */}}
             <h2>Video</h2>

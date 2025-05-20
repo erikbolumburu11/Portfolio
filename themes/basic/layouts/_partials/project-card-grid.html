@@ -11,7 +11,11 @@
 
     {{ range $index, $var := .Site.Taxonomies.tags.ByCount }}
         <a href="/tags/{{ $var.Page.LinkTitle | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+            {{ if eq $var.Page.Data.Term "C-Sharp" }}
+            C# ({{$var.Count}})
+            {{ else }}
             {{ $var.Page.Data.Term }} ({{ $var.Count }})
+            {{ end }}
         </a>
     {{ end }}
 

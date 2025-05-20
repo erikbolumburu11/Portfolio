@@ -6,7 +6,13 @@
     <a href="/categories/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-success tag-badge mb-2">{{ . }}</a>
 {{ end}}
 {{ range .Params.Tags }}
-    <a href="/tags/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">{{ . }}</a>
+    <a href="/tags/{{ . | urlize }}" class="badge link-underline link-underline-opacity-0 bg-secondary tag-badge mb-2">
+        {{ if eq . "C-Sharp" }}
+        C#
+        {{ else }}
+        {{ . }}
+        {{ end }}
+    </a>
 {{ end}}
     <p>{{ .Summary }}</p>
 </div>
