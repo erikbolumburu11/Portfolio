@@ -92,8 +92,13 @@ header {
         margin-left: 8rem;
         margin-right: 8rem;
     }
-}
 
+    .index-body {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 640px;
+    }
+}
 
 
 .project-tags {
@@ -103,6 +108,11 @@ header {
 
 .project-body {
     max-width: 640px;
+}
+
+.index-body {
+    margin-left: 1rem;
+    margin-right:1rem;
 }
 
 @media only screen and (max-width: 768px) {
