@@ -1,5 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title}}"
+featured: true
 summary: ""
 imagePath: ""
 videoPath: ""

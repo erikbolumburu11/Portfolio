@@ -11,9 +11,7 @@ tags:
 - Django
 draft: false
 ---
-## Description
-Descibed
-## Tech Used
-* Item
-* Item
-* Item
+
+### Links
+- [Website Source](https://github.com/erikbolumburu11/DjangoOnlinePaymentService)
+- [Rest API Source](https://github.com/erikbolumburu11/currencyConversionRestAPI)

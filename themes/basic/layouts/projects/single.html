@@ -22,7 +22,7 @@
                 <a href="/projects" class="header-link link-light link-underline-opacity-0 h3">Projects</a>
             </div>
                 <ul class="body pt-2">
-                    {{ range (where .Site.RegularPages "Type" "in" "projects")}}
+                    {{ range (where .Site.RegularPages.ByWeight.Reverse "Type" "in" "projects")}}
                         <li><a class="link-light" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                     {{ end }}
                 </ul>
