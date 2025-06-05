@@ -34,7 +34,7 @@ draft: false
 - Task Grouping
 
 ### Front-end
-The front-end is built using Next.js (TypeScript) and styled using Tailwind CSS. I used many components from [shadcn/ui](https://ui.shadcn.com/) and used [TanStack Table](https://tanstack.com/table/latest) for the todo list.
+The front-end is built using Next.js (TypeScript) and styled using Tailwind CSS. I used many components from [shadcn/ui](https://ui.shadcn.com/) and used [TanStack Table](https://tanstack.com/table/latest) for the todo list. [React Hook Form](https://www.react-hook-form.com/) along with [Zod](https://zod.dev/) for schema validation was also used.
 
 ### Back-end
 The Back-end is built using Express.js (JavaScript) and connects to a PostgreSQL relational database. Authentication was previously implemented using Passport.js (with hashed passwords) and Express Session, however was overkill for the use case and wouldn't allow mobile users to authenticate easily, so the authentication system was refactored to use JWT (JSON Web Tokens) authentication instead.
