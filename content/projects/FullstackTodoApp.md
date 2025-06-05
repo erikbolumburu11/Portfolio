@@ -27,7 +27,8 @@ draft: false
 
 ### Features
 - Task Management
-- Authentication System
+- JWT Authentication System
+- Responsive Design
 - Due Dates
 - Task Sorting
 - Task Grouping
@@ -36,7 +37,7 @@ draft: false
 The front-end is built using Next.js (TypeScript) and styled using Tailwind CSS. I used many components from [shadcn/ui](https://ui.shadcn.com/) and used [TanStack Table](https://tanstack.com/table/latest) for the todo list.
 
 ### Back-end
-The Back-end is built using Express.js (JavaScript) and connects to a PostgreSQL relational database. Authentication is implemented using Passport.js (with hashed passwords) and Express Session.
+The Back-end is built using Express.js (JavaScript) and connects to a PostgreSQL relational database. Authentication was previously implemented using Passport.js (with hashed passwords) and Express Session, however was overkill for the use case and wouldn't allow mobile users to authenticate easily, so the authentication system was refactored to use JWT (JSON Web Tokens) authentication instead.
 
 ### Deploying
 To deploy my front-end, I used [Netlify](https://www.netlify.com/) and to deploy my back-end I used [Render](https://render.com/). The Postgresql database is hosted on [Neon](https://neon.com/). Fortunately all of these services are free!
