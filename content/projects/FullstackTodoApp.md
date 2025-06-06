@@ -3,7 +3,7 @@ title: "Fullstack Todo List App"
 featured: true
 summary: "Built with Next.js (frontend) and Express.js + PostgreSQL (backend), this app lets users create, organize, and manage tasks in real-time. Features include task grouping, due dates, and user authentication with sessions. Styled using Tailwind CSS and component libraries for a clean, responsive UI."
 imagePath: "/images/fullstacktodo.png"
-videoPath: "https://www.youtube.com/embed/MnZdu1ywx7s?si=6NiyxoE-ccOVoDr9"
+videoPath: "https://www.youtube.com/embed/88C6PFBwNkY?si=GVrwNYmpkqcNOG_u"
 weight: 1000
 categories:
 - Web Dev
