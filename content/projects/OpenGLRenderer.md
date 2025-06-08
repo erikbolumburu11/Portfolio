@@ -1,6 +1,6 @@
 ---
 title: "OpenGL Renderer"
-summary: ""
+summary: " "
 imagePath: "/images/openglrenderer.png"
 videoPath: "https://www.youtube.com/embed/lygBcTKR5fo?si=FL_n7c739-hZ1S2G"
 weight: 4
