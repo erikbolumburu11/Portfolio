@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div class="text-center">
 </div>
-<div class="project-container m-3">
+<div class="project-container m-3 pb-3">
     <section class="project-list">
     <div class="card summary-card mx-0 mb-3">
         <div class="card-header">
@@ -19,11 +19,11 @@
     </div>
         <div class="card project-list-card">
             <div class="card-header">
-                <a href="/projects" class="header-link link-light link-underline-opacity-0 h3">Projects</a>
+                <a href="/projects" class="header-link link-dark link-underline-opacity-0 h3">Projects</a>
             </div>
                 <ul class="body pt-2">
                     {{ range (where .Site.RegularPages.ByWeight.Reverse "Type" "in" "projects")}}
-                        <li><a class="link-light" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+                        <li><a class="link-dark link-underline-opacity-0" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
                     {{ end }}
                 </ul>
         </div>

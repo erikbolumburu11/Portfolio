@@ -1,12 +1,41 @@
 ---
 ---
-<div class="index-body text-center">
-    <div name="AboutMe">
-        <h4>About Me</h4>
-        <p>I'm a BSc graduate in ‘Computing for Digital Media and Games’ from the University of Sussex with a strong focus on full-stack web development. I’m eager to begin my career in the tech industry where I can contribute meaningfully in a team, solve real-world problems and continue developing my skills in building great software.</p>
-        <a class="btn btn-primary m-1" href="/Projects" role="button">View my projects</a>
-        <a class="btn btn-primary m-1" target="_blank" href="/documents/CV.pdf" role="button">Download resume</a>
-        <a class="btn btn-primary m-1" href="/Contact" role="button">Contact me</a>
+<style>
+      /* Optional: Fade in animation like your Tailwind version */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeInUp 1.5s ease-in forwards;
+        animation-delay: 0.2s;
+      }
 
+      @keyframes fadeInUp {
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+
+<div class="d-flex align-items-center justify-content-center px-4" style="height: 100dvh; width: 100dvw;">
+  <div class="fade-in d-flex flex-column flex-md-row align-items-center justify-content-center gap-1 w-100">
+
+    <!-- Title Section -->
+    <div class="w-100" style="max-width: 30rem;">
+      <h1 class="display-2 fw-semibold ">Erik <br> Bolumburu</h1>
     </div>
+
+    <!-- Body Section -->
+    <div class="w-100" style="max-width: 30rem;">
+      <p class="lead mb-4 me-3">
+        I'm a BSc graduate in ‘Computing for Digital Media and Games’ from the University of Sussex with a strong focus on full-stack web development. I’m eager to begin my career in the tech industry where I can contribute meaningfully in a team, solve real-world problems and continue developing my skills in building great software.
+      </p>
+      <div>
+        <a class="btn btn-primary my-1" href="/Projects">View my projects</a>
+        <a class="btn btn-primary my-1" target="_blank" href="/documents/CV.pdf">Resume</a>
+        <a class="btn btn-primary my-1" href="/Contact">Contact</a>
+      </div>
+    </div>
+
+  </div>
 </div>

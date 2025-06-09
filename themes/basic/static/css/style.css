@@ -1,9 +1,4 @@
 body {
-    padding-bottom: 40pt;
-}
-
-.navbar {
-    background-color: #424549;
 }
 
 header {
@@ -26,15 +21,12 @@ header {
 .project-card {
     text-align: center;
     max-width: 75% !important;
-    box-shadow: 2pt 2pt 2pt 2pt hsl(210, 11%, 12%, 50%);
     z-index: 0;
     transition: 0.5s;
 }
 
 .project-card:hover {
-    background-color: #272b30;
     transform: scale(1.1);
-    box-shadow: 2pt 2pt 3pt 3pt hsl(210, 11%, 12%, 50%);
     z-index: 1;
 }
 
@@ -108,11 +100,6 @@ header {
 
 .project-body {
     max-width: 640px;
-}
-
-.index-body {
-    margin-left: 1rem;
-    margin-right:1rem;
 }
 
 @media only screen and (max-width: 768px) {

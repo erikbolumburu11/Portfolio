@@ -1,4 +1,6 @@
 {{ define "main" }}
-  {{ .Content }}
-  {{ partial "project-card-grid.html" . }}
+  <div class="pb-5">
+    {{ .Content }}
+    {{ partial "project-card-grid.html" . }}
+  </div>
 {{ end }}

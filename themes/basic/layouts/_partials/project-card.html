@@ -1,6 +1,6 @@
-<div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2" onclick="window.location={{ .RelPermalink }}">
+<div class="card project-card col-sm-4 col-md-4 col-lg-4 col-xl-3 px-0 m-2 shadow-sm" onclick="window.location={{ .RelPermalink }}">
 <img src="{{ .Params.ImagePath }}" class="card-img-top project-image-top mb-3">
-<h5 class="card-title m-0">
+<h5 class="card-title m-0 px-2">
     {{ .Title }}
     {{if eq .Params.Featured true}}
     {{end}}
